@@ -6,7 +6,8 @@
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
-        </tr>        
+        </tr>
+        <?php foreach ($categories as $category) : ?>
         <tr>
             <td><?php echo $category['categoryName']; ?></td>
             <td>
@@ -18,7 +19,8 @@
                 </form>
             </td>
         </tr>
-        <?php endforeach; ?>    </table>
+        <?php endforeach; ?>    
+    </table>
 
     <h2>Add Category</h2>
     <form id="add_category_form"
